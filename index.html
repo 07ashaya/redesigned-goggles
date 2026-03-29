@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webinar Event</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: #f4f8ff;
+}
+
+/* Header */
+header{
+    background: #0a66c2;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* Sections */
+section{
+    padding:60px 20px;
+    text-align:center;
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* Home Section */
+#home{
+    background: linear-gradient(to right,#0a66c2,#5da9ff);
+    color:white;
+}
+
+/* About */
+#about{
+    background:#ffffff;
+}
+
+/* Speakers */
+#speakers{
+    background:#eef3ff;
+}
+
+.speaker-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:220px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.4s;
+}
+
+.card:hover{
+    transform: scale(1.08);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* Location */
+#location{
+    background:#ffffff;
+}
+
+/* Register */
+#register{
+    background:#0a66c2;
+    color:white;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#ffd700;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ffcc00;
+    transform:scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Webinar 2026</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#speakers">Speakers</a></li>
+<li><a href="#location">Location</a></li>
+<li><a href="#register">Register</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+<h1>Future of Technology Webinar</h1>
+<p>Join our exciting webinar to learn about AI, IoT, and Future Tech.</p>
+<p>Date: 15 April 2026 | Time: 5:00 PM</p>
+<button>Join Now</button>
+</section>
+
+<!-- About Section -->
+<section id="about">
+<h2>About the Event</h2>
+<p>
+This webinar focuses on the latest innovations in Artificial Intelligence,
+Internet of Things, and Smart Technology. Students and professionals
+can gain knowledge from industry experts.
+</p>
+</section>
+
+<!-- Speakers Section -->
+<section id="speakers">
+<h2>Our Speakers</h2>
+
+<div class="speaker-container">
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h3>Dr. Rahul Sharma</h3>
+<p>AI Specialist</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<h3>Priya Mehta</h3>
+<p>IoT Engineer</p>
+</div>
+
+<div class="card">
+<img src="https://randomuser.me/api/portraits/men/75.jpg">
+<h3>Aman Verma</h3>
+<p>Cyber Security Expert</p>
+</div>
+
+</div>
+</section>
+
+<!-- Location Section -->
+<section id="location">
+<h2>Event Location</h2>
+<p>Online Webinar (Google Meet / Zoom)</p>
+<p>Link will be shared after registration.</p>
+</section>
+
+<!-- Register Section -->
+<section id="register">
+<h2>Register Now</h2>
+<p>Reserve your seat for the webinar.</p>
+<button>Register</button>
+</section>
+
+</body>
+</html>
